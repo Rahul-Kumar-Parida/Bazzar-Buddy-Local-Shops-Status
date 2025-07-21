@@ -1,6 +1,6 @@
 import React from 'react';
 
-const API_BASE_URL = "http://localhost:8000"; // Change if your backend is hosted elsewhere
+const API_BASE_URL = "https://bazzar-buddy-local-shops-status.onrender.com"; // Change if your backend is hosted elsewhere
 
 export default function ShopCard({ shop }) {
   // Format opening/closing time
