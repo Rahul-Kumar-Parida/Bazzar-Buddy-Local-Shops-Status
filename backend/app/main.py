@@ -6,8 +6,8 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-            "https://bazzar-buddy-local-shops-status.vercel.app",
-            "http://localhost:5173"
+        "https://bazzar-buddy-local-shops-status.vercel.app",  # your Vercel frontend URL
+        "http://localhost:5173"  # for local development
     ],
     allow_credentials=True,
     allow_methods=["*"],
