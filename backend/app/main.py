@@ -14,6 +14,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/")
+def read_root():
+    return {"message": "Bazaar Buddy API is running!"}
+
 from fastapi.staticfiles import StaticFiles
 from .routers import auth, shop, user
 
