@@ -11,4 +11,4 @@ mysqlclient
 pydantic[email]
 pydantic<2.0.0
 python-multipart
-bcrypt==3.2.0
+bcrypt

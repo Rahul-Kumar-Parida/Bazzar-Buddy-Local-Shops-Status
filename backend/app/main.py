@@ -1,24 +1,20 @@
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
-
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://bazzar-buddy-local-shops-status.vercel.app",  # Vercel frontend
-        "http://localhost:5173"  # Local dev
+        "https://bazzar-buddy-local-shops-status.vercel.app",  # Your Vercel frontend
+        "http://localhost:5173"  # For local dev
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-@app.get("/")
-def read_root():
-    return {"message": "Bazaar Buddy API is running!"}
-
+# Now include routers and static mounts
 from fastapi.staticfiles import StaticFiles
 from .routers import auth, shop, user
 
