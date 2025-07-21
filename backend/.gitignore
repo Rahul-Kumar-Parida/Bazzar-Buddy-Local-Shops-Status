@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.env
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Pytest
+.cache/
+.pytest_cache/
+
+# MySQL/SQLite/Postgres local DB files
+*.db
+*.sqlite3
+
+# Logs
+*.log
+
+# Static/media/uploads (if you want to ignore uploaded images in dev)
+# static/images/
+
+# Alembic
+alembic/versions/
+
+# Misc
+*.swp
+*.swo
